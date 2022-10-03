@@ -35,7 +35,7 @@ return new Config([
     ],
     'mail' => [
         'fromName' => 'Cafe La Cigale',
-        'fromEmail' => 'info@cafelacigale.co.uk',
+        'fromEmail' => 'info@mail.co.uk',
         'smtp' => [
             'server' => 'smtp.gmail.com',
             'port' => 587,
