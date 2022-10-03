@@ -1,0 +1,19 @@
+php_value upload_max_filesize 40M
+php_value post_max_size 42M
+
+AddDefaultCharset UTF-8
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Methods "POST, GET, PUT, OPTIONS, PATCH, DELETE"
+
+Header set Access-Control-Max-Age "1000"
+Header set Access-Control-Allow-Headers "x-requested-with, Content-Type, origin, authorization, accept, client-security-token"
+
+Options +FollowSymLinks -MultiViews -Indexes
+
+DirectoryIndex index.html index.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteRule  ^$ public/    [L]
+	RewriteRule  (.*) public/$1 [L]
+</IfModule>
