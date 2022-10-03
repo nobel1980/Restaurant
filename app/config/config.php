@@ -7,9 +7,9 @@ return new Config([
     'databaseMySQL' => [
         'adapter' => 'Mysql',
         'host' => '127.0.0.1',
-        'username' => 'candcltd_cafelacigale',
-        'password' => 'Cigale@2020',
-        'dbname' => 'candcltd_cafe'
+        'username' => 'username',
+        'password' => 'password',
+        'dbname' => 'db'
     ],
 
     'databaseOracle' => [
